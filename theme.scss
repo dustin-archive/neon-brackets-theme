@@ -1,0 +1,178 @@
+// ================================================================================================= \\
+//                                                                                                   \\
+// ================================================================================================= \\
+//                                                                                                   \\
+//     ||||||||          ||||       ||||||||||||       ||||||||||||       ||||||||          ||||     \\
+//   ||||||||||||        ||||||   ||||||||||||||||   ||||||||||||||||   ||||||||||||        ||||||   \\
+//  |||||||||||||||      ||||||| |||||||||||||||||| |||||||||||||||||| |||||||||||||||      |||||||  \\
+//  ||||||||| |||||||    ||||||| |||||||||||||||||| |||||||||||||||||| ||||||||  |||||||    |||||||  \\
+//  |||||||  ||||||||||  ||||||| |||||       |||||  |||||        ||||| ||||||  |||||||||||  |||||||  \\
+//  |||||   ||        ||  |||||| |||                |||            ||| |||||  ||         ||  ||||||  \\
+//  ||||   |  ||||||||  |  ||||| |||                |||            ||| ||||  |   ||||||||  |  |||||  \\
+//  ||||    ||||||||||||    |||| |||                |||            ||| ||||    ||||||||||||    ||||  \\
+//  |||   ||||||||||||||||  |||| |||                |||            ||| |||   ||||||||||||||||  ||||  \\
+//  |||   ||||||||||||||||   ||| |||||  ||||        |||    ||||    ||| |||   ||||||||||||||||   |||  \\
+//  |||   ||||||||||||||||   ||| |||||||||||||      |||  ||||||||  ||| |||   ||||||||||||||||   |||  \\
+//  ||||  ||||||||||||||||   ||| |||||||||||||      |||  ||||||||  ||| ||||  ||||||||||||||||   |||  \\
+//  ||||    ||||||||||||    |||| |||||  ||||        |||    ||||    ||| ||||    ||||||||||||    ||||  \\
+//  |||||  |  ||||||||  |   |||| |||                |||            ||| |||||  |  ||||||||  |   ||||  \\
+//  ||||||  ||        ||   ||||| |||                |||            ||| ||||||  ||        ||   |||||  \\
+//  |||||||  ||||||||||  ||||||| |||||       |||||  |||||        ||||| |||||||  ||||||||||  |||||||  \\
+//  |||||||    ||||||| ||||||||| |||||||||||||||||| |||||||||||||||||| |||||||    ||||||  |||||||||  \\
+//  |||||||      ||||||||||||||| |||||||||||||||||| |||||||||||||||||| |||||||      |||||||||||||||  \\
+//   ||||||        ||||||||||||   ||||||||||||||||   ||||||||||||||||   ||||||        ||||||||||||   \\
+//     ||||          ||||||||       ||||||||||||       ||||||||||||       ||||          ||||||||     \\
+//                                                                                                   \\
+// ================================================================================================= \\
+//                                                                                                   \\
+// ================================================================================================= \\
+
+
+
+//
+// + Colors
+// ==========
+
+$green:        rgb(   0, 255,   0 ); // Lime
+$green-2:      rgb(  63, 255,   0 );
+
+$chartreuse:   rgb( 127, 255,   0 );
+$chartreuse-2: rgb( 191, 255,   0 );
+
+$yellow:       rgb( 255, 255,   0 );
+$yellow-2:     rgb( 255, 191,   0 ); // Gold
+
+$orange:       rgb( 255, 127,   0 );
+$orange-2:     rgb( 255,  63,   0 );
+
+$red:          rgb( 255,   0,   0 );
+$red-2:        rgb( 255,   0,  63 );
+
+$pink:         rgb( 255,   0, 127 );
+$pink-2:       rgb( 255,   0, 191 );
+
+$magenta:      rgb( 255,   0, 255 );
+$magenta-2:    rgb( 191,   0, 255 );
+
+$purple:       rgb( 127,   0, 255 );
+$purple-2:     rgb(  63,   0, 255 ); // Indigo
+
+$blue:         rgb(   0,   0, 255 );
+$blue-2:       rgb(   0,  63, 255 );
+
+$celeste:      rgb(   0, 127, 255 );
+$celeste-2:    rgb(   0, 191, 255 ); // Deep Sky Blue
+
+$cyan:         rgb(   0, 255, 255 );
+$cyan-2:       rgb(   0, 255, 191 ); // Aqua
+
+$seafoam:      rgb(   0, 255, 127 ); // Spring Green / Aquamarine
+$seafoam-2:    rgb(   0, 255,  63 );
+
+$opaque:   rgba( #FFF, ( 4 / 6 ) );
+$opaque-2: rgba( #FFF, ( 2 / 6 ) );
+$opaque-3: rgba( #FFF, ( 1 / 6 ) );
+
+$gray:   rgb(  23,  27,  32 ); //  24  28  32 // Background
+
+$neon-alpha: 1;
+
+
+
+//
+// + Brackets
+// ============
+
+.CodeMirror-linenumber {                       // Gutter line number
+  padding-right: 32px;
+  color: $opaque-2;
+}
+
+.CodeMirror-gutters {                          // Gutter
+  background-color: $gray;
+}
+
+.CodeMirror-scroll {                           // Scrollable area
+  color: $opaque;
+  background-color: $gray;
+}
+
+.CodeMirror-matchingbracket {                  // Matching selected curly brackets
+  color: $opaque !important;
+  background: $opaque-3;
+}
+
+.CodeMirror-matchingtag {                      // Matching selected HTML tags
+  background: $opaque-3;
+}
+
+.CodeMirror-selected,                          // Selected text
+.CodeMirror-activeline .CodeMirror-gutter-elt, // Gutter active line
+.CodeMirror-activeline-background {            // Active line
+  background: $opaque-3;
+}
+
+.CodeMirror-cursor {                           // Cursor
+  border-left: solid 2px $opaque !important;
+}
+
+
+
+//
+// + Syntax
+// ==========
+
+.cm-comment {                                    // Comments
+  font-style: italic;
+  color: $opaque-2;
+}
+
+.cm-string,                                      // Quotes
+.cm-keyword,                                     // Flags and some ( but not all ) property values
+.cm-atom {                                       // Function names and property values
+  color: rgba( $pink, $neon-alpha );
+}
+
+.cm-attribute,                                   // HTML attributes
+.cm-def {                                        // @include
+  color: rgba( $celeste-2, $neon-alpha );
+}
+
+.cm-header,
+.cm-property,                                    // Properties
+.cm-string-2,
+.cm-hr {
+  color: rgba( $celeste-2, $neon-alpha );
+}
+
+.cm-number {                                     // Numbers
+  color: rgba( $celeste, $neon-alpha );
+}
+
+.cm-bracket,                                     // Carrets
+.cm-tag,                                         // HTML tag and function names after @include
+.cm-qualifier {                                  // Selectors
+  color: rgba( $chartreuse, $neon-alpha );
+}
+
+.cm-variable,                                    // Variables
+.cm-variable-2,
+.cm-variable-3,
+.cm-operator,
+.cm-meta {
+  color: rgba( $orange, $neon-alpha );
+}
+
+.cm-builtin,
+.cm-plus,
+.cm-minus,
+.cm-quote,
+.cm-error {                                     // Errors
+  color: rgba( $red, $neon-alpha );
+}
+
+.cm-rangeinfo,
+.cm-link {
+  text-decoration: none;
+  color: rgba( $magenta, $neon-alpha );
+}
