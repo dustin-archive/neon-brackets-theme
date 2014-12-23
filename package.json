@@ -1,17 +1,17 @@
 {
-		"name": "dustindowell.neon",
-		"title": "Neon",
-		"description": "Neon theme for Brackets.",
-		"homepage": "https://github.com/dustindowell22/neon-brackets-theme",
-		"version": "1.0.0",
-		"author": "Dustin Dowell dustindowell22@gmail.com (http://dustindowell.com)",
-		"license": "MIT",
-		"theme": {
-				"file": "theme.css",
-				"dark": true
-		},
-		"engines": {
-			"brackets": ">=1.0.0"
-		},
-		"keywords": ["theme", "neon", "dark" ]
+    "name": "dustindowell.neon",
+    "title": "Neon",
+    "description": "Neon theme for Brackets.",
+    "homepage": "https://github.com/dustindowell22/neon-brackets-theme",
+    "version": "1.0.1",
+    "author": "Dustin Dowell (https://github.com/dustindowell22)",
+    "license": "MIT",
+    "theme": {
+        "file": "theme.css",
+        "dark": true
+    },
+    "engines": {
+      "brackets": ">=1.0.0"
+    },
+    "keywords": ["theme", "neon", "dark" ]
 }

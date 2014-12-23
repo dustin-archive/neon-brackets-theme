@@ -1,3 +1,10 @@
+// Neon Brackets Theme
+// December 22, 2014
+// The MIT License (MIT)
+// Copyright (c) 2014 Dustin Dowell
+// http://github.com/dustindowell22/neon-brackets-theme
+
+
 // ================================================================================================= \\
 //                                                                                                   \\
 // ================================================================================================= \\
@@ -26,7 +33,6 @@
 // ================================================================================================= \\
 //                                                                                                   \\
 // ================================================================================================= \\
-
 
 
 //
@@ -78,7 +84,6 @@ $gray:   rgb(  23,  27,  32 ); //  24  28  32 // Background
 $neon-alpha: 1;
 
 
-
 //
 // + Brackets
 // ============
@@ -117,57 +122,56 @@ $neon-alpha: 1;
 }
 
 
-
 //
 // + Syntax
 // ==========
 
-.cm-comment {                                    // Comments
+.cm-comment {                                  // Comments
   font-style: italic;
   color: $opaque-2;
 }
 
-.cm-string,                                      // Quotes
-.cm-keyword,                                     // Flags and some ( but not all ) property values
-.cm-atom {                                       // Function names and property values
+.cm-string,                                    // Quotes
+.cm-keyword,                                   // Flags and some ( but not all ) property values
+.cm-atom {                                     // Function names and property values
   color: rgba( $pink, $neon-alpha );
 }
 
-.cm-attribute,                                   // HTML attributes
-.cm-def {                                        // @include
+.cm-attribute,                                 // HTML attributes
+.cm-def {                                      // @include
   color: rgba( $celeste-2, $neon-alpha );
 }
 
 .cm-header,
-.cm-property,                                    // Properties
+.cm-property,                                  // Properties
 .cm-string-2,
 .cm-hr {
   color: rgba( $celeste-2, $neon-alpha );
 }
 
-.cm-number {                                     // Numbers
+.cm-number,                                    // Numbers
+.cm-meta {                                     // Vender prefixes
   color: rgba( $celeste, $neon-alpha );
 }
 
-.cm-bracket,                                     // Carrets
-.cm-tag,                                         // HTML tag and function names after @include
-.cm-qualifier {                                  // Selectors
+.cm-bracket,                                   // Carrets
+.cm-tag,                                       // HTML tag and function names after @include
+.cm-qualifier {                                // Selectors
   color: rgba( $chartreuse, $neon-alpha );
 }
 
-.cm-variable,                                    // Variables
+.cm-variable,                                  // Variables
 .cm-variable-2,
 .cm-variable-3,
-.cm-operator,
-.cm-meta {
+.cm-operator {
   color: rgba( $orange, $neon-alpha );
 }
 
 .cm-builtin,
+.cm-quote,
 .cm-plus,
 .cm-minus,
-.cm-quote,
-.cm-error {                                     // Errors
+.cm-error {                                    // Errors
   color: rgba( $red, $neon-alpha );
 }
 

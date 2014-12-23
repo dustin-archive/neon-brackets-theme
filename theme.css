@@ -2,84 +2,69 @@
   padding-right: 32px;
   color: rgba(255, 255, 255, 0.3333333333);
 }
-
 .CodeMirror-gutters {
   background-color: #171b20;
 }
-
 .CodeMirror-scroll {
   color: rgba(255, 255, 255, 0.6666666667);
   background-color: #171b20;
 }
-
 .CodeMirror-matchingbracket {
   color: rgba(255, 255, 255, 0.6666666667) !important;
   background: rgba(255, 255, 255, 0.1666666667);
 }
-
 .CodeMirror-matchingtag {
   background: rgba(255, 255, 255, 0.1666666667);
 }
-
 .CodeMirror-selected,
 .CodeMirror-activeline .CodeMirror-gutter-elt,
 .CodeMirror-activeline-background {
   background: rgba(255, 255, 255, 0.1666666667);
 }
-
 .CodeMirror-cursor {
   border-left: solid 2px rgba(255, 255, 255, 0.6666666667) !important;
 }
-
 .cm-comment {
   font-style: italic;
   color: rgba(255, 255, 255, 0.3333333333);
 }
-
 .cm-string,
 .cm-keyword,
 .cm-atom {
   color: #ff007f;
 }
-
 .cm-attribute,
 .cm-def {
   color: deepskyblue;
 }
-
 .cm-header,
 .cm-property,
 .cm-string-2,
 .cm-hr {
   color: deepskyblue;
 }
-
-.cm-number {
+.cm-number,
+.cm-meta {
   color: #007fff;
 }
-
 .cm-bracket,
 .cm-tag,
 .cm-qualifier {
   color: chartreuse;
 }
-
 .cm-variable,
 .cm-variable-2,
 .cm-variable-3,
-.cm-operator,
-.cm-meta {
+.cm-operator {
   color: #ff7f00;
 }
-
 .cm-builtin,
+.cm-quote,
 .cm-plus,
 .cm-minus,
-.cm-quote,
 .cm-error {
   color: red;
 }
-
 .cm-rangeinfo,
 .cm-link {
   text-decoration: none;
