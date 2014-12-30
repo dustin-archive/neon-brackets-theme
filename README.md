@@ -31,6 +31,7 @@ Neon Brackets Theme
     // ================================================================================================= \\
 
 
+Screenshots are from version 1.0.0. See CHANGELOG.md for differences.
 
 ## CSS
 ![](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/neon-css.png)

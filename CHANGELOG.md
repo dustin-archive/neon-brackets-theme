@@ -1,6 +1,10 @@
 Changelog
 =========
 
+December 30, 2014
++ Changed chartreuse to a slightly darker chartreuse
++ Changed pink to a slightly lighter pink
+
 December 22, 2014
 + Changed CSS vendor prefixes (`.cm-meta`) from orange to celeste
 

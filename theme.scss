@@ -1,5 +1,5 @@
 // Neon Brackets Theme
-// December 22, 2014
+// December 30, 2014
 // The MIT License (MIT)
 // Copyright (c) 2014 Dustin Dowell
 // http://github.com/dustindowell22/neon-brackets-theme
@@ -75,11 +75,15 @@ $cyan-2:       rgb(   0, 255, 191 ); // Aqua
 $seafoam:      rgb(   0, 255, 127 ); // Spring Green / Aquamarine
 $seafoam-2:    rgb(   0, 255,  63 );
 
+$dark-chartreuse: mix($chartreuse, #000, 87.5%);
+
+$light-pink: mix($pink, #FFF, 87.5%);
+
 $opaque:   rgba( #FFF, ( 4 / 6 ) );
 $opaque-2: rgba( #FFF, ( 2 / 6 ) );
 $opaque-3: rgba( #FFF, ( 1 / 6 ) );
 
-$gray:   rgb(  23,  27,  32 ); //  24  28  32 // Background
+$gray:   rgb(  23,  27,  31 ); //  24  28  32 // Background
 
 $neon-alpha: 1;
 
@@ -134,7 +138,7 @@ $neon-alpha: 1;
 .cm-string,                                    // Quotes
 .cm-keyword,                                   // Flags and some ( but not all ) property values
 .cm-atom {                                     // Function names and property values
-  color: rgba( $pink, $neon-alpha );
+  color: rgba( $light-pink, $neon-alpha );
 }
 
 .cm-attribute,                                 // HTML attributes
@@ -157,7 +161,7 @@ $neon-alpha: 1;
 .cm-bracket,                                   // Carrets
 .cm-tag,                                       // HTML tag and function names after @include
 .cm-qualifier {                                // Selectors
-  color: rgba( $chartreuse, $neon-alpha );
+  color: rgba( $dark-chartreuse, $neon-alpha );
 }
 
 .cm-variable,                                  // Variables

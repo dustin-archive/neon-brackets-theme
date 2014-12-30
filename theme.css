@@ -3,11 +3,11 @@
   color: rgba(255, 255, 255, 0.3333333333);
 }
 .CodeMirror-gutters {
-  background-color: #171b20;
+  background-color: #171b1f;
 }
 .CodeMirror-scroll {
   color: rgba(255, 255, 255, 0.6666666667);
-  background-color: #171b20;
+  background-color: #171b1f;
 }
 .CodeMirror-matchingbracket {
   color: rgba(255, 255, 255, 0.6666666667) !important;
@@ -31,7 +31,7 @@
 .cm-string,
 .cm-keyword,
 .cm-atom {
-  color: #ff007f;
+  color: #ff1f8f;
 }
 .cm-attribute,
 .cm-def {
@@ -50,7 +50,7 @@
 .cm-bracket,
 .cm-tag,
 .cm-qualifier {
-  color: chartreuse;
+  color: #6fdf00;
 }
 .cm-variable,
 .cm-variable-2,
