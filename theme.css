@@ -70,3 +70,23 @@
   text-decoration: none;
   color: magenta;
 }
+.CodeMirror-foldgutter-open:after,
+.CodeMirror-foldgutter-folded:after {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.3333333333);
+}
+.CodeMirror-foldmarker {
+  display: inline-block;
+  margin: 0 2px;
+  border-radius: 1em;
+  border: 0;
+  position: relative;
+  top: 1px;
+  color: rgba(255, 255, 255, 0.6666666667);
+  background-color: rgba(255, 255, 255, 0.1666666667);
+}
+.CodeMirror-foldmarker:after {
+  content: '\2022\2022\2022';
+  position: relative;
+  top: -1px;
+}
