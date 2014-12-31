@@ -74,8 +74,7 @@ $seafoam:      rgb(   0, 255, 127 ); // Spring Green / Aquamarine
 $seafoam-2:    rgb(   0, 255,  63 );
 
 $dark-chartreuse: mix( $chartreuse, #000, 87.5% );
-
-$light-pink: mix( $pink, #FFF, 87.5% );
+$light-pink:      mix( $pink,       #FFF, 87.5% );
 
 $opaque-1: rgba( #FFF, ( 4 / 6 ) );
 $opaque-2: rgba( #FFF, ( 2 / 6 ) );
@@ -95,31 +94,33 @@ $neon-alpha: 1;
   color: $opaque-2;
 }
 
+.CodeMirror-scroll,                            // Scrollable area
 .CodeMirror-gutters {                          // Gutter
   background-color: $gray;
 }
 
 .CodeMirror-scroll {                           // Scrollable area
   color: $opaque-1;
-  background-color: $gray;
 }
 
 .CodeMirror-matchingbracket {                  // Matching selected curly brackets
   color: $opaque-1 !important;
-  background: $opaque-3;
+  background-color: $opaque-3;
 }
 
-.CodeMirror-matchingtag {                      // Matching selected HTML tags
-  background: $opaque-3;
+.CodeMirror-matchingtag,                       // Matching selected HTML tags
+.CodeMirror-selected {                         // Selected text
+  background-color: $opaque-3;
 }
 
-.CodeMirror-selected,                          // Selected text
 .CodeMirror-activeline .CodeMirror-gutter-elt, // Gutter active line
 .CodeMirror-activeline-background {            // Active line
-  background: $opaque-3;
+  margin-top: 1px;
+  background-color: $opaque-3;
 }
 
 .CodeMirror-cursor {                           // Cursor
+  margin-top: 1px;
   border-left: solid 2px $opaque-1 !important;
 }
 
@@ -133,26 +134,23 @@ $neon-alpha: 1;
   color: $opaque-2;
 }
 
-.cm-string,                                    // Quotes
+.cm-atom,                                      // Function names and property values
 .cm-keyword,                                   // Flags and some ( but not all ) property values
-.cm-atom {                                     // Function names and property values
+.cm-string {                                   // Quotes
   color: rgba( $light-pink, $neon-alpha );
 }
 
 .cm-attribute,                                 // HTML attributes
-.cm-def {                                      // @include
-  color: rgba( $celeste-2, $neon-alpha );
-}
-
+.cm-def,                                       // @include
 .cm-header,
+.cm-hr,
 .cm-property,                                  // Properties
-.cm-string-2,
-.cm-hr {
+.cm-string-2 {
   color: rgba( $celeste-2, $neon-alpha );
 }
 
-.cm-number,                                    // Numbers
-.cm-meta {                                     // Vender prefixes
+.cm-meta,                                      // Vender prefixes
+.cm-number {                                   // Numbers
   color: rgba( $celeste, $neon-alpha );
 }
 
@@ -162,23 +160,23 @@ $neon-alpha: 1;
   color: rgba( $dark-chartreuse, $neon-alpha );
 }
 
+.cm-operator,
 .cm-variable,                                  // Variables
 .cm-variable-2,
-.cm-variable-3,
-.cm-operator {
+.cm-variable-3 {
   color: rgba( $orange, $neon-alpha );
 }
 
 .cm-builtin,
-.cm-quote,
-.cm-plus,
+.cm-error,                                     // Errors
 .cm-minus,
-.cm-error {                                    // Errors
+.cm-plus,
+.cm-quote {
   color: rgba( $red, $neon-alpha );
 }
 
-.cm-rangeinfo,
-.cm-link {
+.cm-link,
+.cm-rangeinfo {
   text-decoration: none;
   color: rgba( $magenta, $neon-alpha );
 }
@@ -191,18 +189,14 @@ $neon-alpha: 1;
 .CodeMirror-foldgutter {
   &-open:after,
   &-folded:after {
+    position: relative;
+    top: 1px;
     font-size: 1em;
     color: $opaque-2;
   }
 }
 
 .CodeMirror-foldmarker {
-  &:after {
-    content: '\2022\2022\2022';
-    position: relative;
-    top: -1px;
-  }
-
   display: inline-block;
   margin: 0 2px;
   border-radius: 1em;
@@ -211,4 +205,10 @@ $neon-alpha: 1;
   top: 1px;
   color: $opaque-1;
   background-color: $opaque-3;
+
+  &:after {
+    content: '\2022\2022\2022';
+    position: relative;
+    top: -1px;
+  }
 }
