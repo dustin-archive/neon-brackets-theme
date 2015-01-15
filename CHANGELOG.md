@@ -1,6 +1,12 @@
 Changelog
 =========
 
+**January 14, 2015**
++ 1.0.6
+  + Fixed CSS Color Preview and matching tag/brackets height when using a larger font size
+  + Tweaked the magenta to a slightly lighter more purple magenta
+  + Tweaked the lightness and darkness of dark chartreuse and light pink
+
 **January 2, 2015**
 + 1.0.5
   + Re-tweaked active line height, cursor, fold gutter arrows and fold marker positions

@@ -29,7 +29,8 @@ Neon Brackets Theme
     ===================================================================================
 
 
-Screenshots are from version 1.0.0. See CHANGELOG.md for differences.
+Screenshots are from version 1.0.0.
+See CHANGELOG.md for differences.
 
 ## CSS
 ![CSS Preview](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/neon-css.png)
@@ -41,6 +42,6 @@ Screenshots are from version 1.0.0. See CHANGELOG.md for differences.
 ![JS Preview](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/neon-js.png)
 
 
-## Styled Extensions
+## Themed Extensions
 + [CSS Color Preview by cmgddd](https://github.com/cmgddd/Brackets-css-color-preview)
 + [Code Folding by thehogfather](https://github.com/thehogfather/brackets-code-folding)

@@ -24,7 +24,7 @@
   content: '';
   display: block;
   width: 100%;
-  height: 15px;
+  height: 1.25em;
   position: absolute;
   top: 1px;
   left: 0;
@@ -45,7 +45,7 @@
 .cm-atom,
 .cm-keyword,
 .cm-string {
-  color: #ff1f8f;
+  color: #ff3298;
 }
 .cm-attribute,
 .cm-def,
@@ -62,7 +62,7 @@
 .cm-bracket,
 .cm-tag,
 .cm-qualifier {
-  color: #6fdf00;
+  color: #6bd800;
 }
 .cm-operator,
 .cm-variable,
@@ -80,7 +80,7 @@
 .cm-link,
 .cm-rangeinfo {
   text-decoration: none;
-  color: magenta;
+  color: #d559ff;
 }
 .CodeMirror-foldgutter-open:after,
 .CodeMirror-foldgutter-folded:after {
@@ -106,8 +106,8 @@
 }
 .ico-cssColorPreview {
   display: block;
-  width: 8px;
-  height: 15px;
+  width: 0.5em;
+  height: 1.25em;
   margin: 0;
   border: 0;
 }
