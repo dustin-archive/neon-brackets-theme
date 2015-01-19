@@ -1,5 +1,5 @@
 // Neon Brackets Theme
-// January 14, 2015
+// January 19, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
 // http://github.com/dustindowell22/neon-brackets-theme
@@ -81,11 +81,11 @@ $neon-alpha: 1;
 
 .CodeMirror-code pre {
   position: relative;
-  top: -1px;
+  top: -0.0625em;
 }
 
 .CodeMirror-linenumber {                       // Gutter line number
-  padding-right: 32px;
+  padding-right: 2em;
   color: $opaque-2;
 }
 
@@ -108,9 +108,9 @@ $neon-alpha: 1;
     content: '';
     display: block;
     width: 100%;
-    height: 1.25em;
+    height: 1.1875em;
     position: absolute;
-    top: 1px;
+    top: 0.125em;
     left: 0;
     background-color: $opaque-3;
   }
@@ -123,7 +123,7 @@ $neon-alpha: 1;
 }
 
 .CodeMirror-cursor {                           // Cursor
-  border-left: solid 2px $opaque !important;
+  border-left: solid 0.125em $opaque !important;
 }
 
 
@@ -192,7 +192,7 @@ $neon-alpha: 1;
   &-open:after,
   &-folded:after {
     position: relative;
-    top: 1px;
+    top: 0.0625em;
     font-size: 1em;
     color: $opaque-2;
   }
@@ -200,18 +200,18 @@ $neon-alpha: 1;
 
 .CodeMirror-foldmarker {
   display: inline-block;
-  margin: 0 2px;
-  border-radius: 7.5px;
+  margin: 0 0.125em;
+  border-radius: 0.5em;
   border: 0;
   position: relative;
-  top: 1px;
+  top: 0.0625em;
   color: $opaque;
   background-color: $opaque-3;
 
   &:after {
     content: '\2022\2022\2022';
     position: relative;
-    top: -1px;
+    top: -0.0625em;
   }
 }
 

@@ -29,17 +29,21 @@ Neon Brackets Theme
     ===================================================================================
 
 
-Screenshots are from version 1.0.0.
+Screenshots are from version 1.0.7.
 See CHANGELOG.md for differences.
 
-## CSS
-![CSS Preview](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/neon-css.png)
-
-#SCSS
-![SCSS Preview](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/neon-scss.png)
 
 ## JS
-![JS Preview](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/neon-js.png)
+![JS](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/js.png)
+
+## SCSS
+![SCSS](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/scss.png)
+
+## Code Folding
+![Code Folding](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/code-folding.png)
+
+## Color Preview
+![Color Preview](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/color-preview.png)
 
 
 ## Themed Extensions

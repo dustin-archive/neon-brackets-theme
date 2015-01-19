@@ -1,9 +1,9 @@
 .CodeMirror-code pre {
   position: relative;
-  top: -1px;
+  top: -0.0625em;
 }
 .CodeMirror-linenumber {
-  padding-right: 32px;
+  padding-right: 2em;
   color: rgba(255, 255, 255, 0.3333333333);
 }
 .CodeMirror-scroll,
@@ -24,9 +24,9 @@
   content: '';
   display: block;
   width: 100%;
-  height: 1.25em;
+  height: 1.1875em;
   position: absolute;
-  top: 1px;
+  top: 0.125em;
   left: 0;
   background-color: rgba(255, 255, 255, 0.1666666667);
 }
@@ -36,7 +36,7 @@
   background-color: rgba(255, 255, 255, 0.1666666667);
 }
 .CodeMirror-cursor {
-  border-left: solid 2px rgba(255, 255, 255, 0.6666666667) !important;
+  border-left: solid 0.125em rgba(255, 255, 255, 0.6666666667) !important;
 }
 .cm-comment {
   font-style: italic;
@@ -85,24 +85,24 @@
 .CodeMirror-foldgutter-open:after,
 .CodeMirror-foldgutter-folded:after {
   position: relative;
-  top: 1px;
+  top: 0.0625em;
   font-size: 1em;
   color: rgba(255, 255, 255, 0.3333333333);
 }
 .CodeMirror-foldmarker {
   display: inline-block;
-  margin: 0 2px;
-  border-radius: 7.5px;
+  margin: 0 0.125em;
+  border-radius: 0.5em;
   border: 0;
   position: relative;
-  top: 1px;
+  top: 0.0625em;
   color: rgba(255, 255, 255, 0.6666666667);
   background-color: rgba(255, 255, 255, 0.1666666667);
 }
 .CodeMirror-foldmarker:after {
   content: '\2022\2022\2022';
   position: relative;
-  top: -1px;
+  top: -0.0625em;
 }
 .ico-cssColorPreview {
   display: block;
