@@ -2,6 +2,12 @@ Changelog
 =========
 
 **January 19, 2015**
++ 1.0.8
+  + Changed pseudo elements to a light red
+  + Changed values to a slightly more blue, blue
+  + Changed operators to white
+  + Changed functions to celeste
+
 + 1.0.7
   + Changed px units to em units so they always scale according to font size
 

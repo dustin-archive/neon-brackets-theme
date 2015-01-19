@@ -63,8 +63,10 @@ $seafoam:      rgb(   0, 255, 127 ); // Spring Green / Aquamarine
 $seafoam-2:    rgb(   0, 255,  63 );
 
 $dark-chartreuse: mix( $chartreuse, #000, 85% );
+$light-red-2:     mix( $red-2,      #FFF, 90% );
 $light-pink:      mix( $pink,       #FFF, 80% );
 $light-magenta-2: mix( $magenta-2,  #FFF, 65% );
+$blue-2-celeste:  mix( $blue-2, $celeste, 25% );
 
 $opaque:   rgba( #FFF, ( 4 / 6 ) );
 $opaque-2: rgba( #FFF, ( 2 / 6 ) );
@@ -147,13 +149,14 @@ $neon-alpha: 1;
 .cm-header,
 .cm-hr,
 .cm-property,                                  // Properties
-.cm-string-2 {
+.cm-string-2,
+.cm-variable {                                 // Variables
   color: rgba( $celeste-2, $neon-alpha );
 }
 
 .cm-meta,                                      // Vender prefixes
 .cm-number {                                   // Numbers
-  color: rgba( $celeste, $neon-alpha );
+  color: rgba( $blue-2-celeste, $neon-alpha );
 }
 
 .cm-bracket,                                   // Carrets
@@ -162,11 +165,16 @@ $neon-alpha: 1;
   color: rgba( $dark-chartreuse, $neon-alpha );
 }
 
-.cm-operator,
-.cm-variable,                                  // Variables
-.cm-variable-2,
-.cm-variable-3 {
+.cm-operator {
+  color: $opaque;
+}
+
+.cm-variable-2 {
   color: rgba( $orange, $neon-alpha );
+}
+
+.cm-variable-3 {                               // Pseudo elements
+  color: rgba( $light-red-2, $neon-alpha );
 }
 
 .cm-builtin,
@@ -174,7 +182,7 @@ $neon-alpha: 1;
 .cm-minus,
 .cm-plus,
 .cm-quote {
-  color: rgba( $red, $neon-alpha );
+  color: rgba( $red-2, $neon-alpha );
 }
 
 .cm-link,

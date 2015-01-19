@@ -30,6 +30,7 @@ Neon Brackets Theme
 
 
 Screenshots are from version 1.0.7.
+
 See CHANGELOG.md for differences.
 
 
@@ -47,5 +48,5 @@ See CHANGELOG.md for differences.
 
 
 ## Themed Extensions
-+ [CSS Color Preview by cmgddd](https://github.com/cmgddd/Brackets-css-color-preview)
 + [Code Folding by thehogfather](https://github.com/thehogfather/brackets-code-folding)
++ [CSS Color Preview by cmgddd](https://github.com/cmgddd/Brackets-css-color-preview)

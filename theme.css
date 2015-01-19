@@ -52,30 +52,34 @@
 .cm-header,
 .cm-hr,
 .cm-property,
-.cm-string-2 {
+.cm-string-2,
+.cm-variable {
   color: deepskyblue;
 }
 .cm-meta,
 .cm-number {
-  color: #007fff;
+  color: #006fff;
 }
 .cm-bracket,
 .cm-tag,
 .cm-qualifier {
   color: #6bd800;
 }
-.cm-operator,
-.cm-variable,
-.cm-variable-2,
-.cm-variable-3 {
+.cm-operator {
+  color: rgba(255, 255, 255, 0.6666666667);
+}
+.cm-variable-2 {
   color: #ff7f00;
+}
+.cm-variable-3 {
+  color: #ff1952;
 }
 .cm-builtin,
 .cm-error,
 .cm-minus,
 .cm-plus,
 .cm-quote {
-  color: red;
+  color: #ff003f;
 }
 .cm-link,
 .cm-rangeinfo {
