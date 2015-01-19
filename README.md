@@ -1,4 +1,4 @@
-Neon Brackets Theme
+Neon Brackets Theme - 1.0.8
 =========
 
     ===================================================================================
@@ -29,9 +29,7 @@ Neon Brackets Theme
     ===================================================================================
 
 
-Screenshots are from version 1.0.7.
-
-See CHANGELOG.md for differences.
+Screenshots are from version 1.0.8.
 
 
 ## JS
