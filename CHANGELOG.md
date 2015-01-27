@@ -1,6 +1,12 @@
 Changelog
 =========
 
+**January 27, 2015**
++ 1.0.9
+  + Minimized CSS by using attribute selectors
+  + Changed gutter active line text color to a less transparent white
+  + Fixed fold gutter gap for Code Folding when window was inactive
+
 **January 19, 2015**
 + 1.0.8
   + Changed pseudo elements to a light red

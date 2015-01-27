@@ -2,23 +2,28 @@
   position: relative;
   top: -0.0625em;
 }
+
 .CodeMirror-linenumber {
-  padding-right: 2em;
+  padding-right: 1em;
   color: rgba(255, 255, 255, 0.3333333333);
 }
+
 .CodeMirror-scroll,
 .CodeMirror-gutters {
   background-color: #171b1f;
 }
+
 .CodeMirror-scroll {
   color: rgba(255, 255, 255, 0.6666666667);
 }
+
 .CodeMirror-matchingtag,
 .CodeMirror-matchingbracket {
   position: relative;
   color: rgba(255, 255, 255, 0.6666666667) !important;
   background-color: transparent;
 }
+
 .CodeMirror-matchingtag::after,
 .CodeMirror-matchingbracket::after {
   content: '';
@@ -30,23 +35,29 @@
   left: 0;
   background-color: rgba(255, 255, 255, 0.1666666667);
 }
+
 .CodeMirror-selected,
 .CodeMirror-activeline .CodeMirror-gutter-elt,
 .CodeMirror-activeline-background {
+  color: rgba(255, 255, 255, 0.6666666667);
   background-color: rgba(255, 255, 255, 0.1666666667);
 }
+
 .CodeMirror-cursor {
   border-left: solid 0.125em rgba(255, 255, 255, 0.6666666667) !important;
 }
+
 .cm-comment {
   font-style: italic;
   color: rgba(255, 255, 255, 0.3333333333);
 }
+
 .cm-atom,
 .cm-keyword,
 .cm-string {
   color: #ff3298;
 }
+
 .cm-attribute,
 .cm-def,
 .cm-header,
@@ -56,24 +67,30 @@
 .cm-variable {
   color: deepskyblue;
 }
+
 .cm-meta,
 .cm-number {
   color: #006fff;
 }
+
 .cm-bracket,
 .cm-tag,
 .cm-qualifier {
   color: #6bd800;
 }
+
 .cm-operator {
   color: rgba(255, 255, 255, 0.6666666667);
 }
+
 .cm-variable-2 {
   color: #ff7f00;
 }
+
 .cm-variable-3 {
   color: #ff1952;
 }
+
 .cm-builtin,
 .cm-error,
 .cm-minus,
@@ -81,18 +98,33 @@
 .cm-quote {
   color: #ff003f;
 }
+
 .cm-link,
 .cm-rangeinfo {
   text-decoration: none;
   color: #d559ff;
 }
-.CodeMirror-foldgutter-open:after,
-.CodeMirror-foldgutter-folded:after {
+
+.CodeMirror-gutter-elt {
+  height: 100%;
+}
+
+.CodeMirror-foldgutter {
+  width: 2em;
+}
+
+[class^='CodeMirror-foldgutter-'] {
+  text-align: center;
+  width: 100%;
+}
+
+[class^='CodeMirror-foldgutter-']:after {
   position: relative;
   top: 0.0625em;
   font-size: 1em;
   color: rgba(255, 255, 255, 0.3333333333);
 }
+
 .CodeMirror-foldmarker {
   display: inline-block;
   margin: 0 0.125em;
@@ -103,11 +135,13 @@
   color: rgba(255, 255, 255, 0.6666666667);
   background-color: rgba(255, 255, 255, 0.1666666667);
 }
+
 .CodeMirror-foldmarker:after {
   content: '\2022\2022\2022';
   position: relative;
   top: -0.0625em;
 }
+
 .ico-cssColorPreview {
   display: block;
   width: 0.5em;

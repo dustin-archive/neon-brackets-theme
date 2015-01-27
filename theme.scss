@@ -1,5 +1,5 @@
 // Neon Brackets Theme
-// January 19, 2015
+// January 27, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
 // http://github.com/dustindowell22/neon-brackets-theme
@@ -31,7 +31,6 @@
 //
 //    ===================================================================================
 //    ===================================================================================
-
 
 //
 // + Colors
@@ -76,7 +75,6 @@ $gray: rgb( 23,  27,  31 );
 
 $neon-alpha: 1;
 
-
 //
 // + Brackets
 // ============
@@ -87,7 +85,7 @@ $neon-alpha: 1;
 }
 
 .CodeMirror-linenumber {                       // Gutter line number
-  padding-right: 2em;
+  padding-right: 1em;
   color: $opaque-2;
 }
 
@@ -121,13 +119,13 @@ $neon-alpha: 1;
 .CodeMirror-selected,                          // Selected text
 .CodeMirror-activeline .CodeMirror-gutter-elt, // Gutter active line
 .CodeMirror-activeline-background {            // Active line
+  color: $opaque;
   background-color: $opaque-3;
 }
 
 .CodeMirror-cursor {                           // Cursor
   border-left: solid 0.125em $opaque !important;
 }
-
 
 //
 // + Syntax
@@ -191,14 +189,24 @@ $neon-alpha: 1;
   color: rgba( $light-magenta-2, $neon-alpha );
 }
 
-
 //
 // + Code Folding
 // ================
+// 1. Temporary fix for fold gutter gap for Code Folding when window is inactive
+
+.CodeMirror-gutter-elt {
+  height: 100%; // 1
+}
 
 .CodeMirror-foldgutter {
-  &-open:after,
-  &-folded:after {
+  width: 2em;
+}
+
+[class^='CodeMirror-foldgutter-'] {
+  text-align: center;
+  width: 100%;
+
+  &:after {
     position: relative;
     top: 0.0625em;
     font-size: 1em;
@@ -222,7 +230,6 @@ $neon-alpha: 1;
     top: -0.0625em;
   }
 }
-
 
 //
 // + CSS Color Preview
