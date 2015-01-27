@@ -2,6 +2,10 @@ Changelog
 =========
 
 **January 27, 2015**
++ 1.1.0
+  + Slightly less blue tinted background
+  + Slightly lighter purple
+
 + 1.0.9
   + Minimized CSS by using attribute selectors
   + Changed gutter active line text color to a less transparent white

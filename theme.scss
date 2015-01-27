@@ -36,42 +36,42 @@
 // + Colors
 // ==========
 
-$green:        rgb(   0, 255,   0 ); // Lime
-$green-2:      rgb(  63, 255,   0 );
-$chartreuse:   rgb( 127, 255,   0 );
-$chartreuse-2: rgb( 191, 255,   0 );
-$yellow:       rgb( 255, 255,   0 );
-$yellow-2:     rgb( 255, 191,   0 ); // Gold
-$orange:       rgb( 255, 127,   0 );
-$orange-2:     rgb( 255,  63,   0 );
-$red:          rgb( 255,   0,   0 );
-$red-2:        rgb( 255,   0,  63 );
-$pink:         rgb( 255,   0, 127 );
-$pink-2:       rgb( 255,   0, 191 );
-$magenta:      rgb( 255,   0, 255 );
-$magenta-2:    rgb( 191,   0, 255 );
-$purple:       rgb( 127,   0, 255 );
-$purple-2:     rgb(  63,   0, 255 ); // Indigo
-$blue:         rgb(   0,   0, 255 );
-$blue-2:       rgb(   0,  63, 255 );
-$celeste:      rgb(   0, 127, 255 );
-$celeste-2:    rgb(   0, 191, 255 ); // Deep Sky Blue
-$cyan:         rgb(   0, 255, 255 );
-$cyan-2:       rgb(   0, 255, 191 ); // Aqua
-$seafoam:      rgb(   0, 255, 127 ); // Spring Green / Aquamarine
-$seafoam-2:    rgb(   0, 255,  63 );
+$green:        rgb(  0, 255,   0); // Lime
+$green-2:      rgb( 63, 255,   0);
+$chartreuse:   rgb(127, 255,   0);
+$chartreuse-2: rgb(191, 255,   0);
+$yellow:       rgb(255, 255,   0);
+$yellow-2:     rgb(255, 191,   0); // Gold
+$orange:       rgb(255, 127,   0);
+$orange-2:     rgb(255,  63,   0);
+$red:          rgb(255,   0,   0);
+$red-2:        rgb(255,   0,  63);
+$pink:         rgb(255,   0, 127);
+$pink-2:       rgb(255,   0, 191);
+$magenta:      rgb(255,   0, 255);
+$magenta-2:    rgb(191,   0, 255);
+$purple:       rgb(127,   0, 255);
+$purple-2:     rgb( 63,   0, 255); // Indigo
+$blue:         rgb(  0,   0, 255);
+$blue-2:       rgb(  0,  63, 255);
+$celeste:      rgb(  0, 127, 255);
+$celeste-2:    rgb(  0, 191, 255); // Deep Sky Blue
+$cyan:         rgb(  0, 255, 255);
+$cyan-2:       rgb(  0, 255, 191); // Aqua
+$seafoam:      rgb(  0, 255, 127); // Spring Green / Aquamarine
+$seafoam-2:    rgb(  0, 255,  63);
 
-$dark-chartreuse: mix( $chartreuse, #000, 85% );
-$light-red-2:     mix( $red-2,      #FFF, 90% );
-$light-pink:      mix( $pink,       #FFF, 80% );
-$light-magenta-2: mix( $magenta-2,  #FFF, 65% );
-$blue-2-celeste:  mix( $blue-2, $celeste, 25% );
+$dark-chartreuse: mix($chartreuse, #000, 85%);
+$light-red-2:     mix($red-2,      #FFF, 90%);
+$light-pink:      mix($pink,       #FFF, 80%);
+$light-magenta-2: mix($magenta-2,  #FFF, 60%);
+$blue-2-celeste:  mix($blue-2, $celeste, 25%);
 
-$opaque:   rgba( #FFF, ( 4 / 6 ) );
-$opaque-2: rgba( #FFF, ( 2 / 6 ) );
-$opaque-3: rgba( #FFF, ( 1 / 6 ) );
+$opaque:   rgba(#FFF, (4 / 6));
+$opaque-2: rgba(#FFF, (2 / 6));
+$opaque-3: rgba(#FFF, (1 / 6));
 
-$gray: rgb( 23,  27,  31 );
+$gray: rgb(25,  27,  29);
 
 $neon-alpha: 1;
 
@@ -137,9 +137,9 @@ $neon-alpha: 1;
 }
 
 .cm-atom,                                      // Function names and property values
-.cm-keyword,                                   // Flags and some ( but not all ) property values
+.cm-keyword,                                   // Flags and some (but not all) property values
 .cm-string {                                   // Quotes
-  color: rgba( $light-pink, $neon-alpha );
+  color: rgba($light-pink, $neon-alpha);
 }
 
 .cm-attribute,                                 // HTML attributes
@@ -149,18 +149,18 @@ $neon-alpha: 1;
 .cm-property,                                  // Properties
 .cm-string-2,
 .cm-variable {                                 // Variables
-  color: rgba( $celeste-2, $neon-alpha );
+  color: rgba($celeste-2, $neon-alpha);
 }
 
 .cm-meta,                                      // Vender prefixes
 .cm-number {                                   // Numbers
-  color: rgba( $blue-2-celeste, $neon-alpha );
+  color: rgba($blue-2-celeste, $neon-alpha);
 }
 
 .cm-bracket,                                   // Carrets
 .cm-tag,                                       // HTML tag and function names after @include
 .cm-qualifier {                                // Selectors
-  color: rgba( $dark-chartreuse, $neon-alpha );
+  color: rgba($dark-chartreuse, $neon-alpha);
 }
 
 .cm-operator {
@@ -168,11 +168,11 @@ $neon-alpha: 1;
 }
 
 .cm-variable-2 {
-  color: rgba( $orange, $neon-alpha );
+  color: rgba($orange, $neon-alpha);
 }
 
 .cm-variable-3 {                               // Pseudo elements
-  color: rgba( $light-red-2, $neon-alpha );
+  color: rgba($light-red-2, $neon-alpha);
 }
 
 .cm-builtin,
@@ -180,13 +180,13 @@ $neon-alpha: 1;
 .cm-minus,
 .cm-plus,
 .cm-quote {
-  color: rgba( $red-2, $neon-alpha );
+  color: rgba($red-2, $neon-alpha);
 }
 
 .cm-link,
 .cm-rangeinfo {
   text-decoration: none;
-  color: rgba( $light-magenta-2, $neon-alpha );
+  color: rgba($light-magenta-2, $neon-alpha);
 }
 
 //

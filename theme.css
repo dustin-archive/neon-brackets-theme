@@ -10,7 +10,7 @@
 
 .CodeMirror-scroll,
 .CodeMirror-gutters {
-  background-color: #171b1f;
+  background-color: #191b1d;
 }
 
 .CodeMirror-scroll {
@@ -102,7 +102,7 @@
 .cm-link,
 .cm-rangeinfo {
   text-decoration: none;
-  color: #d559ff;
+  color: #d866ff;
 }
 
 .CodeMirror-gutter-elt {
