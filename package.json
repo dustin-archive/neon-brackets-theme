@@ -3,11 +3,11 @@
     "title": "Neon",
     "description": "Neon theme for Brackets.",
     "homepage": "https://github.com/dustindowell22/neon-brackets-theme",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "author": "Dustin Dowell (https://github.com/dustindowell22)",
     "license": "MIT",
     "theme": {
-        "file": "theme.css",
+        "file": "theme.less",
         "dark": true
     },
     "engines": {

@@ -1,5 +1,5 @@
 // Neon Brackets Theme
-// January 27, 2015
+// February 8, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
 // http://github.com/dustindowell22/neon-brackets-theme
@@ -36,95 +36,77 @@
 // + Colors
 // ==========
 
-$green:        rgb(  0, 255,   0); // Lime
-$green-2:      rgb( 63, 255,   0);
-$chartreuse:   rgb(127, 255,   0);
-$chartreuse-2: rgb(191, 255,   0);
-$yellow:       rgb(255, 255,   0);
-$yellow-2:     rgb(255, 191,   0); // Gold
-$orange:       rgb(255, 127,   0);
-$orange-2:     rgb(255,  63,   0);
-$red:          rgb(255,   0,   0);
-$red-2:        rgb(255,   0,  63);
-$pink:         rgb(255,   0, 127);
-$pink-2:       rgb(255,   0, 191);
-$magenta:      rgb(255,   0, 255);
-$magenta-2:    rgb(191,   0, 255);
-$purple:       rgb(127,   0, 255);
-$purple-2:     rgb( 63,   0, 255); // Indigo
-$blue:         rgb(  0,   0, 255);
-$blue-2:       rgb(  0,  63, 255);
-$celeste:      rgb(  0, 127, 255);
-$celeste-2:    rgb(  0, 191, 255); // Deep Sky Blue
-$cyan:         rgb(  0, 255, 255);
-$cyan-2:       rgb(  0, 255, 191); // Aqua
-$seafoam:      rgb(  0, 255, 127); // Spring Green / Aquamarine
-$seafoam-2:    rgb(  0, 255,  63);
+@green-1:      rgb(  0, 255,   0); // Lime
+@green-2:      rgb( 63, 255,   0);
+@chartreuse-1: rgb(127, 255,   0);
+@chartreuse-2: rgb(191, 255,   0);
+@yellow-1:     rgb(255, 255,   0);
+@yellow-2:     rgb(255, 191,   0); // Gold
+@orange-1:     rgb(255, 127,   0);
+@orange-2:     rgb(255,  63,   0);
+@red-1:        rgb(255,   0,   0);
+@red-2:        rgb(255,   0,  63);
+@pink-1:       rgb(255,   0, 127);
+@pink-2:       rgb(255,   0, 191);
+@magenta-1:    rgb(255,   0, 255);
+@magenta-2:    rgb(191,   0, 255);
+@purple-1:     rgb(127,   0, 255);
+@purple-2:     rgb( 63,   0, 255); // Indigo
+@blue-1:       rgb(  0,   0, 255);
+@blue-2:       rgb(  0,  63, 255);
+@celeste-1:    rgb(  0, 127, 255);
+@celeste-2:    rgb(  0, 191, 255); // Deep Sky Blue
+@cyan-1:       rgb(  0, 255, 255);
+@cyan-2:       rgb(  0, 255, 191); // Aqua
+@seafoam-1:    rgb(  0, 255, 127); // Spring Green / Aquamarine
+@seafoam-2:    rgb(  0, 255,  63);
 
-$dark-chartreuse: mix($chartreuse, #000, 85%);
-$light-red-2:     mix($red-2,      #FFF, 90%);
-$light-pink:      mix($pink,       #FFF, 80%);
-$light-magenta-2: mix($magenta-2,  #FFF, 60%);
-$blue-2-celeste:  mix($blue-2, $celeste, 25%);
+@dark-chartreuse-1: rgb(127 - (255 * 0.125), 255 - (255 * 0.125),   0 - (255 * 0.125));
+@light-red-2:       rgb(255 + (255 * 0.125),   0 + (255 * 0.125),  63 + (255 * 0.125));
+@light-pink-1:      rgb(255 + (255 * 0.250),   0 + (255 * 0.250), 127 + (255 * 0.250));
+@blue-2-celeste-1:  rgb((0 + 0) / (2 - 0.25), (63 + 127) / (2 - 0.25), (255 + 255) / (2 - 0.25));
 
-$opaque:   rgba(#FFF, (4 / 6));
-$opaque-2: rgba(#FFF, (2 / 6));
-$opaque-3: rgba(#FFF, (1 / 6));
+@opaque-1: rgba(255, 255, 255, (4 / 6));
+@opaque-2: rgba(255, 255, 255, (2 / 6));
+@opaque-3: rgba(255, 255, 255, (1 / 6));
 
-$gray: rgb(25,  27,  29);
-
-$neon-alpha: 1;
+@gray: rgb(25,  27,  29);
 
 //
 // + Brackets
 // ============
 
-.CodeMirror-code pre {
-  position: relative;
-  top: -0.0625em;
-}
-
 .CodeMirror-linenumber {                       // Gutter line number
   padding-right: 1em;
-  color: $opaque-2;
+  color: @opaque-2;
 }
 
 .CodeMirror-scroll,                            // Scrollable area
 .CodeMirror-gutters {                          // Gutter
-  background-color: $gray;
+  background-color: @gray;
 }
 
 .CodeMirror-scroll {                           // Scrollable area
-  color: $opaque;
+  color: @opaque-1;
 }
 
 .CodeMirror-matchingtag,                       // Matching selected HTML tags
 .CodeMirror-matchingbracket {                  // Matching selected curly brackets
-  position: relative;
-  color: $opaque !important;
-  background-color: transparent;
-
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1.1875em;
-    position: absolute;
-    top: 0.125em;
-    left: 0;
-    background-color: $opaque-3;
-  }
+  display: inline-block;
+  line-height: 1.25;
+  color: @opaque-1 !important;
+  background-color: @opaque-3;
 }
 
 .CodeMirror-selected,                          // Selected text
 .CodeMirror-activeline .CodeMirror-gutter-elt, // Gutter active line
 .CodeMirror-activeline-background {            // Active line
-  color: $opaque;
-  background-color: $opaque-3;
+  color: @opaque-1;
+  background-color: @opaque-3;
 }
 
 .CodeMirror-cursor {                           // Cursor
-  border-left: solid 0.125em $opaque !important;
+  border-left: solid 0.125em @opaque-1 !important;
 }
 
 //
@@ -133,13 +115,13 @@ $neon-alpha: 1;
 
 .cm-comment {                                  // Comments
   font-style: italic;
-  color: $opaque-2;
+  color: @opaque-2;
 }
 
 .cm-atom,                                      // Function names and property values
 .cm-keyword,                                   // Flags and some (but not all) property values
 .cm-string {                                   // Quotes
-  color: rgba($light-pink, $neon-alpha);
+  color: @light-pink-1;
 }
 
 .cm-attribute,                                 // HTML attributes
@@ -149,60 +131,54 @@ $neon-alpha: 1;
 .cm-property,                                  // Properties
 .cm-string-2,
 .cm-variable {                                 // Variables
-  color: rgba($celeste-2, $neon-alpha);
+  color: @celeste-2;
 }
 
 .cm-meta,                                      // Vender prefixes
 .cm-number {                                   // Numbers
-  color: rgba($blue-2-celeste, $neon-alpha);
+  color: @blue-2-celeste-1;
 }
 
+.cm-builtin,                                   // ID Selector
 .cm-bracket,                                   // Carrets
 .cm-tag,                                       // HTML tag and function names after @include
-.cm-qualifier {                                // Selectors
-  color: rgba($dark-chartreuse, $neon-alpha);
+.cm-qualifier {                                // Class selectors
+  color: @dark-chartreuse-1;
 }
 
 .cm-operator {
-  color: $opaque;
+  color: @opaque-1;
 }
 
 .cm-variable-2 {
-  color: rgba($orange, $neon-alpha);
+  color: @orange-1;
 }
 
-.cm-variable-3 {                               // Pseudo elements
-  color: rgba($light-red-2, $neon-alpha);
-}
-
-.cm-builtin,
+.cm-variable-3,                                // Pseudo elements
 .cm-error,                                     // Errors
 .cm-minus,
 .cm-plus,
 .cm-quote {
-  color: rgba($red-2, $neon-alpha);
+  color: @light-red-2;
 }
 
 .cm-link,
 .cm-rangeinfo {
   text-decoration: none;
-  color: rgba($light-magenta-2, $neon-alpha);
+  color: @dark-chartreuse-1;
 }
 
 //
 // + Code Folding
 // ================
-// 1. Temporary fix for fold gutter gap for Code Folding when window is inactive
-
-.CodeMirror-gutter-elt {
-  height: 100%; // 1
-}
 
 .CodeMirror-foldgutter {
   width: 2em;
 }
 
-[class^='CodeMirror-foldgutter-'] {
+.CodeMirror-foldgutter-open,
+.CodeMirror-foldgutter-folded,
+.CodeMirror-foldgutter-blank {
   text-align: center;
   width: 100%;
 
@@ -210,19 +186,17 @@ $neon-alpha: 1;
     position: relative;
     top: 0.0625em;
     font-size: 1em;
-    color: $opaque-2;
+    color: @opaque-2;
   }
 }
 
 .CodeMirror-foldmarker {
   display: inline-block;
   margin: 0 0.125em;
-  border-radius: 0.5em;
+  border-radius: 0.75em;
   border: 0;
-  position: relative;
-  top: 0.0625em;
-  color: $opaque;
-  background-color: $opaque-3;
+  color: @opaque-1;
+  background-color: @opaque-3;
 
   &:after {
     content: '\2022\2022\2022';

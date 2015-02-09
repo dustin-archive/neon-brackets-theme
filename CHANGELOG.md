@@ -1,6 +1,18 @@
 Changelog
 =========
 
+**February 8, 2015**
++ 1.1.1
+  + Switched from Sass to Less
+  + Changed CSS ID's from red to chartreuse
+  + Changed magenta to chartreuse
+  + Changed chartreuse to a slightly darker chartreuse
+  + Changed red to a slightly lighter red
+  + Changed pink to a slightly lighter pink
+  + Reverted and fixed the way matching tags/brackets work
+  + Tweaked Code Folding and active line positioning
+  + Removed Code Folding gutter height fix
+
 **January 27, 2015**
 + 1.1.0
   + Slightly less blue tinted background

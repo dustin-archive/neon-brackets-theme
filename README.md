@@ -1,4 +1,4 @@
-Neon Brackets Theme - 1.1.0
+Neon Brackets Theme - 1.1.1
 =========
 
 ```
