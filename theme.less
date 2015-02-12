@@ -1,8 +1,9 @@
-// Neon Brackets Theme
-// February 8, 2015
+// Neon Brackets Theme - 1.1.2
+// February 12, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
 // http://github.com/dustindowell22/neon-brackets-theme
+// =============================================
 
 
 //    ===================================================================================
@@ -34,14 +35,14 @@
 
 //
 // + Colors
-// ==========
+// =============================================
 
-@green-1:      rgb(  0, 255,   0); // Lime
+@green-1:      rgb(  0, 255,   0);
 @green-2:      rgb( 63, 255,   0);
 @chartreuse-1: rgb(127, 255,   0);
 @chartreuse-2: rgb(191, 255,   0);
 @yellow-1:     rgb(255, 255,   0);
-@yellow-2:     rgb(255, 191,   0); // Gold
+@yellow-2:     rgb(255, 191,   0);
 @orange-1:     rgb(255, 127,   0);
 @orange-2:     rgb(255,  63,   0);
 @red-1:        rgb(255,   0,   0);
@@ -51,20 +52,20 @@
 @magenta-1:    rgb(255,   0, 255);
 @magenta-2:    rgb(191,   0, 255);
 @purple-1:     rgb(127,   0, 255);
-@purple-2:     rgb( 63,   0, 255); // Indigo
+@purple-2:     rgb( 63,   0, 255);
 @blue-1:       rgb(  0,   0, 255);
 @blue-2:       rgb(  0,  63, 255);
 @celeste-1:    rgb(  0, 127, 255);
-@celeste-2:    rgb(  0, 191, 255); // Deep Sky Blue
+@celeste-2:    rgb(  0, 191, 255);
 @cyan-1:       rgb(  0, 255, 255);
-@cyan-2:       rgb(  0, 255, 191); // Aqua
-@seafoam-1:    rgb(  0, 255, 127); // Spring Green / Aquamarine
+@cyan-2:       rgb(  0, 255, 191);
+@seafoam-1:    rgb(  0, 255, 127);
 @seafoam-2:    rgb(  0, 255,  63);
 
-@dark-chartreuse-1: rgb(127 - (255 * 0.125), 255 - (255 * 0.125),   0 - (255 * 0.125));
-@light-red-2:       rgb(255 + (255 * 0.125),   0 + (255 * 0.125),  63 + (255 * 0.125));
-@light-pink-1:      rgb(255 + (255 * 0.250),   0 + (255 * 0.250), 127 + (255 * 0.250));
-@blue-2-celeste-1:  rgb((0 + 0) / (2 - 0.25), (63 + 127) / (2 - 0.25), (255 + 255) / (2 - 0.25));
+@dark-chartreuse-1: mix(#000, @chartreuse-1, 12.5%);
+@light-red-2:       mix(#FFF, @red-2,        18.75%);
+@light-pink-1:      mix(#FFF, @pink-1,       25%);
+@blue-2-celeste-1:  mix(@blue-2, @celeste-1, 25%);
 
 @opaque-1: rgba(255, 255, 255, (4 / 6));
 @opaque-2: rgba(255, 255, 255, (2 / 6));
@@ -74,88 +75,89 @@
 
 //
 // + Brackets
-// ============
+// =============================================
 
-.CodeMirror-linenumber {                       // Gutter line number
+.CodeMirror-linenumber {                        // Gutter line number
   padding-right: 1em;
   color: @opaque-2;
 }
 
-.CodeMirror-scroll,                            // Scrollable area
-.CodeMirror-gutters {                          // Gutter
+.CodeMirror-scroll,                             // Scrollable area
+.CodeMirror-gutters {                           // Gutter
   background-color: @gray;
 }
 
-.CodeMirror-scroll {                           // Scrollable area
+.CodeMirror-scroll {                            // Scrollable area
   color: @opaque-1;
 }
 
-.CodeMirror-matchingtag,                       // Matching selected HTML tags
-.CodeMirror-matchingbracket {                  // Matching selected curly brackets
-  display: inline-block;
-  line-height: 1.25;
+.CodeMirror-matchingtag {                       // Matching selected HTML tags
+  background-color: @opaque-3;
+}
+
+.CodeMirror-matchingbracket {                   // Matching selected curly brackets
   color: @opaque-1 !important;
   background-color: @opaque-3;
 }
 
-.CodeMirror-selected,                          // Selected text
-.CodeMirror-activeline .CodeMirror-gutter-elt, // Gutter active line
-.CodeMirror-activeline-background {            // Active line
+.CodeMirror-selected,                           // Selected text
+.CodeMirror-activeline .CodeMirror-gutter-elt,  // Gutter active line
+.CodeMirror-activeline-background {             // Active line
   color: @opaque-1;
   background-color: @opaque-3;
 }
 
-.CodeMirror-cursor {                           // Cursor
+.CodeMirror-cursor {                            // Cursor
   border-left: solid 0.125em @opaque-1 !important;
 }
 
 //
 // + Syntax
-// ==========
+// =============================================
 
-.cm-comment {                                  // Comments
+.cm-operator {
+  color: @opaque-1;
+}
+
+.cm-comment {                                   // Comments
   font-style: italic;
   color: @opaque-2;
 }
 
-.cm-atom,                                      // Function names and property values
-.cm-keyword,                                   // Flags and some (but not all) property values
-.cm-string {                                   // Quotes
+.cm-atom,                                       // Function names and property values
+.cm-keyword,                                    // Flags and some (but not all) property values
+.cm-string {                                    // Quotes
   color: @light-pink-1;
 }
 
-.cm-attribute,                                 // HTML attributes
-.cm-def,                                       // @include
+.cm-attribute,                                  // HTML attributes
+.cm-def,                                        // @include
 .cm-header,
 .cm-hr,
-.cm-property,                                  // Properties
+.cm-property,                                   // Properties
 .cm-string-2,
-.cm-variable {                                 // Variables
+.cm-variable {                                  // Variables
   color: @celeste-2;
 }
 
-.cm-meta,                                      // Vender prefixes
-.cm-number {                                   // Numbers
+.cm-meta,                                       // Vender prefixes
+.cm-number {                                    // Numbers
   color: @blue-2-celeste-1;
 }
 
-.cm-builtin,                                   // ID Selector
-.cm-bracket,                                   // Carrets
-.cm-tag,                                       // HTML tag and function names after @include
-.cm-qualifier {                                // Class selectors
+.cm-builtin,                                    // ID Selector
+.cm-bracket,                                    // Carrets
+.cm-tag,                                        // HTML tag and function names after @include
+.cm-qualifier {                                 // Class selectors
   color: @dark-chartreuse-1;
-}
-
-.cm-operator {
-  color: @opaque-1;
 }
 
 .cm-variable-2 {
   color: @orange-1;
 }
 
-.cm-variable-3,                                // Pseudo elements
-.cm-error,                                     // Errors
+.cm-variable-3,                                 // Pseudo elements
+.cm-error,                                      // Errors
 .cm-minus,
 .cm-plus,
 .cm-quote {
@@ -170,7 +172,7 @@
 
 //
 // + Code Folding
-// ================
+// =============================================
 
 .CodeMirror-foldgutter {
   width: 2em;
@@ -182,7 +184,7 @@
   text-align: center;
   width: 100%;
 
-  &:after {
+  &::after {
     position: relative;
     top: 0.0625em;
     font-size: 1em;
@@ -198,7 +200,7 @@
   color: @opaque-1;
   background-color: @opaque-3;
 
-  &:after {
+  &::after {
     content: '\2022\2022\2022';
     position: relative;
     top: -0.0625em;
@@ -207,7 +209,7 @@
 
 //
 // + CSS Color Preview
-// =====================
+// =============================================
 
 .ico-cssColorPreview {
   display: block;

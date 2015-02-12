@@ -1,6 +1,14 @@
 Changelog
 =========
 
+**February 12, 2015**
++ 1.1.2
+  + Used Less's color mixing functions
+  + Changed red to a slightly lighter red
+  + Pink is now correctly lightened
+  + Matching HTML tags no longer make the text white
+  + Cleaned up styles
+
 **February 8, 2015**
 + 1.1.1
   + Switched from Sass to Less
