@@ -2,6 +2,9 @@ Changelog
 =========
 
 **February 18, 2015**
++ 1.1.4
+  + Added notice and instructions on how to setup properly
+
 + 1.1.3
   + Added styles for [MiniMap by zorgzerg](https://github.com/zorgzerg/brackets-minimap)
   + More transparent active line highlight and matching tags highlight

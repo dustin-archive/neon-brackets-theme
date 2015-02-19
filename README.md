@@ -1,4 +1,4 @@
-Neon Brackets Theme - 1.1.3
+Neon Brackets Theme - 1.1.4
 =========
 
 ```
@@ -31,10 +31,10 @@ Neon Brackets Theme - 1.1.3
 ```
 
 
-NOTICE: As of version 1.1.3, Neon is a theme that acts like an extension in order to theme specific parts of other extensions. In your theme prefrences select 'Brackets Light (Default)' and reload Brackets (ctrl/cmd + r). Sorry for the inconvenience.
+NOTICE: As of version 1.1.3, Neon is a theme that acts like an extension in order to theme specific parts of other extensions. In your theme prefrences select 'Brackets Light (Default)' and reload Brackets (ctrl/cmd + r).
 
 
-Screenshots are from version 1.1.3
+Screenshots are from version 1.1.4
 
 
 ## HTML
