@@ -1,4 +1,4 @@
-Neon Brackets Theme - 1.1.2
+Neon Brackets Theme - 1.1.3
 =========
 
 ```
@@ -31,22 +31,28 @@ Neon Brackets Theme - 1.1.2
 ```
 
 
-Screenshots are from version 1.0.8.
+Screenshots are from v1.1.3
 
 
-## JS
-![JS](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/js.png)
+## HTML
+![HTML](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/html.png)
 
-## SCSS
-![SCSS](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/scss.png)
+## CSS
+![CSS](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/css.png)
+
+## JavaScript
+![JavaScript](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/javascript.png)
 
 ## Code Folding
 ![Code Folding](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/code-folding.png)
 
-## Color Preview
-![Color Preview](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/color-preview.png)
+## CSS Color Preview
+![CSS Color Preview](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/css-color-preview.png)
 
+## MiniMap
+![MiniMap](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/color-preview.png)
 
 ## Themed Extensions
 + [Code Folding by thehogfather](https://github.com/thehogfather/brackets-code-folding)
 + [CSS Color Preview by cmgddd](https://github.com/cmgddd/Brackets-css-color-preview)
++ [MiniMap by zorgzerg](https://github.com/zorgzerg/brackets-minimap)

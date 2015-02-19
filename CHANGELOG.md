@@ -1,6 +1,11 @@
 Changelog
 =========
 
+**February 18, 2015**
++ 1.1.3
+  + Added styles for [MiniMap by zorgzerg](https://github.com/zorgzerg/brackets-minimap)
+  + More transparent active line highlight and matching tags highlight
+
 **February 12, 2015**
 + 1.1.2
   + Used Less's color mixing functions

@@ -1,5 +1,5 @@
-// Neon Brackets Theme - 1.1.2
-// February 12, 2015
+// Neon Brackets Theme - 1.1.3
+// February 18, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
 // http://github.com/dustindowell22/neon-brackets-theme
@@ -67,9 +67,10 @@
 @light-pink-1:      mix(#FFF, @pink-1,       25%);
 @blue-2-celeste-1:  mix(@blue-2, @celeste-1, 25%);
 
-@opaque-1: rgba(255, 255, 255, (4 / 6));
-@opaque-2: rgba(255, 255, 255, (2 / 6));
-@opaque-3: rgba(255, 255, 255, (1 / 6));
+@opaque-1: rgba(255, 255, 255, (4   / 6));
+@opaque-2: rgba(255, 255, 255, (2   / 6));
+@opaque-3: rgba(255, 255, 255, (1   / 6));
+@opaque-4: rgba(255, 255, 255, (0.5 / 6));
 
 @gray: rgb(25,  27,  29);
 
@@ -77,97 +78,101 @@
 // + Brackets
 // =============================================
 
-.CodeMirror-linenumber {                        // Gutter line number
-  padding-right: 1em;
-  color: @opaque-2;
-}
+.CodeMirror {                                   // MiniMap
+  background-color: @gray;                      // MiniMap
 
-.CodeMirror-scroll,                             // Scrollable area
-.CodeMirror-gutters {                           // Gutter
-  background-color: @gray;
-}
+  .CodeMirror-linenumber {                      // Gutter line number
+    padding-right: 1em;
+    color: @opaque-2;
+  }
 
-.CodeMirror-scroll {                            // Scrollable area
-  color: @opaque-1;
-}
+  .CodeMirror-scroll,                           // Scrollable area
+  .CodeMirror-gutters {                         // Gutter
+    background-color: @gray;
+  }
 
-.CodeMirror-matchingtag {                       // Matching selected HTML tags
-  background-color: @opaque-3;
-}
+  .CodeMirror-scroll {                          // Scrollable area
+    color: @opaque-1;
+  }
 
-.CodeMirror-matchingbracket {                   // Matching selected curly brackets
-  color: @opaque-1 !important;
-  background-color: @opaque-3;
-}
+  .CodeMirror-matchingtag {                     // Matching selected HTML tags
+    background-color: @opaque-4;
+  }
 
-.CodeMirror-selected,                           // Selected text
-.CodeMirror-activeline .CodeMirror-gutter-elt,  // Gutter active line
-.CodeMirror-activeline-background {             // Active line
-  color: @opaque-1;
-  background-color: @opaque-3;
-}
+  .CodeMirror-matchingbracket {                 // Matching selected curly brackets
+    color: @opaque-1 !important;
+    background-color: @opaque-4;
+  }
 
-.CodeMirror-cursor {                            // Cursor
-  border-left: solid 0.125em @opaque-1 !important;
-}
+  .CodeMirror-selected,                         // Selected text
+  .CodeMirror-activeline .CodeMirror-gutter-elt,// Gutter active line
+  .CodeMirror-activeline-background {           // Active line
+    color: @opaque-1;
+    background-color: @opaque-4;
+  }
 
-//
-// + Syntax
-// =============================================
+  .CodeMirror-cursor {                          // Cursor
+    border-left: solid 0.125em @opaque-1 !important;
+  }
 
-.cm-operator {
-  color: @opaque-1;
-}
+  //
+  // + Syntax
+  // =============================================
 
-.cm-comment {                                   // Comments
-  font-style: italic;
-  color: @opaque-2;
-}
+  .cm-operator {
+    color: @opaque-1;
+   }
 
-.cm-atom,                                       // Function names and property values
-.cm-keyword,                                    // Flags and some (but not all) property values
-.cm-string {                                    // Quotes
-  color: @light-pink-1;
-}
+  .cm-comment {                                 // Comments
+    font-style: italic;
+    color: @opaque-2;
+  }
 
-.cm-attribute,                                  // HTML attributes
-.cm-def,                                        // @include
-.cm-header,
-.cm-hr,
-.cm-property,                                   // Properties
-.cm-string-2,
-.cm-variable {                                  // Variables
-  color: @celeste-2;
-}
+  .cm-atom,                                     // Function names and property values
+  .cm-keyword,                                  // Flags and some (but not all) property values
+  .cm-string {                                  // Quotes
+    color: @light-pink-1;
+  }
 
-.cm-meta,                                       // Vender prefixes
-.cm-number {                                    // Numbers
-  color: @blue-2-celeste-1;
-}
+  .cm-attribute,                                // HTML attributes
+  .cm-def,                                      // @include
+  .cm-header,
+  .cm-hr,
+  .cm-property,                                 // Properties
+  .cm-string-2,
+  .cm-variable {                                // Variables
+    color: @celeste-2;
+  }
 
-.cm-builtin,                                    // ID Selector
-.cm-bracket,                                    // Carrets
-.cm-tag,                                        // HTML tag and function names after @include
-.cm-qualifier {                                 // Class selectors
-  color: @dark-chartreuse-1;
-}
+  .cm-meta,                                     // Vender prefixes
+  .cm-number {                                  // Numbers
+    color: @blue-2-celeste-1;
+  }
 
-.cm-variable-2 {
-  color: @orange-1;
-}
+  .cm-builtin,                                  // ID Selector
+  .cm-bracket,                                  // Carrets
+  .cm-tag,                                      // HTML tag and function names after @include
+  .cm-qualifier {                               // Class selectors
+    color: @dark-chartreuse-1;
+  }
 
-.cm-variable-3,                                 // Pseudo elements
-.cm-error,                                      // Errors
-.cm-minus,
-.cm-plus,
-.cm-quote {
-  color: @light-red-2;
-}
+  .cm-variable-2 {
+    color: @orange-1;
+  }
 
-.cm-link,
-.cm-rangeinfo {
-  text-decoration: none;
-  color: @dark-chartreuse-1;
+  .cm-variable-3,                               // Pseudo elements
+  .cm-error,                                    // Errors
+  .cm-minus,
+  .cm-plus,
+  .cm-quote {
+    color: @light-red-2;
+  }
+
+  .cm-link,
+  .cm-rangeinfo {
+    text-decoration: none;
+    color: @dark-chartreuse-1;
+  }
 }
 
 //
@@ -217,4 +222,17 @@
   height: 1.25em;
   margin: 0;
   border: 0;
+}
+
+//
+// + MiniMap
+// =============================================
+
+#wdMinimap {
+  border: 0 !important;
+}
+
+#visible_box {
+  opacity: 1 !important;
+  background-color: @opaque-4 !important;
 }
