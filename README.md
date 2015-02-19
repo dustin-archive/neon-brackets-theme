@@ -50,7 +50,7 @@ Screenshots are from v1.1.3
 ![CSS Color Preview](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/css-color-preview.png)
 
 ## MiniMap
-![MiniMap](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/color-minimap.png)
+![MiniMap](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/minimap.png)
 
 ## Themed Extensions
 + [Code Folding by thehogfather](https://github.com/thehogfather/brackets-code-folding)
