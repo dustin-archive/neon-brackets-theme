@@ -1,6 +1,11 @@
 Changelog
 =========
 
+**March 2, 2015**
++ 1.1.5
+  + Tweaked gutter margin
+  + Removed styles for Minimap. Check out this extension if you use Minimap: [Neon Minimap](https://github.com/zorgzerg/neon-minimap-brackets-extension)
+
 **February 18, 2015**
 + 1.1.4
   + Added notice and instructions on how to setup properly
