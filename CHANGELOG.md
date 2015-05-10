@@ -1,6 +1,11 @@
 Changelog
 =========
 
+**May 9, 2015**
++ 1.1.6
+  + Slightly lighter background gray
+  + Fixed issues with Code Folding after it was merged into Brackets
+
 **March 2, 2015**
 + 1.1.5
   + Tweaked gutter margin
