@@ -1,6 +1,11 @@
 Changelog
 =========
 
+**May 11, 2015**
++ 1.1.7
+  + Slightly tweaked chartreuse, orange, red, pink, and blue colors
+  + Removed my text art
+
 **May 9, 2015**
 + 1.1.6
   + Slightly lighter background gray

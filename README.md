@@ -1,39 +1,10 @@
-Neon Brackets Theme - 1.1.6
+Neon Brackets Theme - 1.1.7
 =========
 
-```
-===================================================================================
-===================================================================================
 
-  ||||||||          ||||     ||||||||||     ||||||||||     ||||||||          ||||
- |||||||||||        |||||   ||||||||||||   ||||||||||||   |||||||||||        |||||
-||||||||||||||      |||||| |||||||||||||| |||||||||||||| ||||||||||||||      ||||||
-|||||||| |||||||    |||||| |||||||||||||| |||||||||||||| |||||||| |||||||    ||||||
-||||||  ||||||||||  |||||| ||||     ||||  |||        ||| ||||||  ||||||||||  ||||||
-||||   ||        ||  ||||| ||             ||          || ||||   ||        ||  |||||
-|||   |  ||||||||  |  |||| ||             ||          || |||   |  ||||||||  |  ||||
-|||    ||||||||||||    ||| ||             ||          || |||    ||||||||||||    |||
-||   ||||||||||||||||  ||| ||             ||          || ||   ||||||||||||||||  |||
-||   ||||||||||||||||   || |||  ||||      ||   ||||   || ||   ||||||||||||||||   ||
-||   ||||||||||||||||   || |||||||||||    || |||||||| || ||   ||||||||||||||||   ||
-|||  ||||||||||||||||   || |||||||||||    || |||||||| || |||  ||||||||||||||||   ||
-|||    ||||||||||||    ||| |||  ||||      ||   ||||   || |||    ||||||||||||    |||
-||||  |  ||||||||  |   ||| ||             ||          || ||||  |  ||||||||  |   |||
-|||||  ||        ||   |||| ||             ||          || |||||  ||        ||   ||||
-||||||  ||||||||||  |||||| ||||     ||||  |||        ||| ||||||  ||||||||||  ||||||
-||||||    ||||||| |||||||| |||||||||||||| |||||||||||||| ||||||    ||||||| ||||||||
-||||||      |||||||||||||| |||||||||||||| |||||||||||||| ||||||      ||||||||||||||
- |||||        |||||||||||   ||||||||||||   ||||||||||||   |||||        |||||||||||
-  ||||          ||||||||     ||||||||||     ||||||||||     ||||          ||||||||
-
-===================================================================================
-===================================================================================
-```
-
-
-NOTICE:
-+ Version 1.1.5 and later, Neon is back to being a theme only. 1.1.5 also removed styles for Minimap. Check out this extension if you use Minimap: [Neon Minimap](https://github.com/dustindowell22/neon-minimap-brackets-extension)
-+ Version 1.1.3 and 1.1.4 are extensions in order to theme specific parts of other extensions. In your theme prefrences select 'Brackets Light (Default)' and reload Brackets (ctrl/cmd + r).
+NOTE:
++ Version 1.1.5 and later, Neon is back to being a theme only! 1.1.5 removed styles for Minimap. Check out this extension if you use Minimap: [Neon Minimap](https://github.com/dustindowell22/neon-minimap-brackets-extension)
++ Version 1.1.3 and 1.1.4 Neon is an extension, not a theme, to override CSS from the Minimap extension. In your theme prefrences select 'Brackets Light (Default)' and reload Brackets (ctrl/cmd + r).
 
 
 Screenshots are from version 1.1.4
@@ -55,5 +26,5 @@ Screenshots are from version 1.1.4
 ![CSS Color Preview](https://github.com/dustindowell22/neon-brackets-theme/blob/master/preview/css-color-preview.png)
 
 ## Themed Extensions
-+ [Code Folding by thehogfather](https://github.com/thehogfather/brackets-code-folding)
++ [Code Folding by thehogfather](https://github.com/thehogfather/brackets-code-folding) (Now integrated into Brackets)
 + [CSS Color Preview by cmgddd](https://github.com/cmgddd/Brackets-css-color-preview)
