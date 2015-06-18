@@ -1,6 +1,10 @@
 Changelog
 =========
 
+**June 18, 2015**
++ 1.1.8
+  + Slightly lightened celeste
+
 **May 11, 2015**
 + 1.1.7
   + Slightly tweaked chartreuse, orange, red, pink, and blue colors

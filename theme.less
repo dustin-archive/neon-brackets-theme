@@ -1,8 +1,8 @@
-// Neon Brackets Theme - 1.1.7
-// May 11, 2015
+// Neon Brackets Theme - 1.1.8
+// June 18, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
-// http://github.com/dustindowell22/neon-brackets-theme
+// github.com/dustindowell22/neon-brackets-theme
 // =============================================
 
 
@@ -35,11 +35,12 @@
 @seafoam-1:    rgb(  0, 255, 127);
 @seafoam-2:    rgb(  0, 255,  63);
 
-@neon-chartreuse: mix(#000,    @chartreuse-1, 25% * 0.50);
-@neon-orange:     mix(#FFF,    @orange-1,     25% * 0.50);
-@neon-red:        mix(#FFF,    @red-2,        25% * 0.75);
-@neon-pink:       mix(#FFF,    @pink-1,       25% * 1.25);
-@neon-blue:       mix(@blue-2, @celeste-1,    25% * 0.75);
+@neon-chartreuse: mix(#000,       @chartreuse-1, 25% * 0.50);
+@neon-orange:     mix(#FFF,       @orange-1,     25% * 0.50);
+@neon-red:        mix(#FFF,       @red-2,        25% * 0.75);
+@neon-pink:       mix(#FFF,       @pink-1,       25% * 1.25);
+@neon-blue:       mix(@blue-2,    @celeste-1,    25% * 0.75);
+@neon-celeste:    mix(@celeste-2, @cyan-1,       25% * 3.00);
 
 @opaque-1: rgba(255, 255, 255, (4   / 6));
 @opaque-2: rgba(255, 255, 255, (2   / 6));
@@ -112,7 +113,7 @@
 .cm-property,                                   // Properties
 .cm-string-2,
 .cm-variable {                                  // Variables
-  color: @celeste-2;
+  color: @neon-celeste;
 }
 
 .cm-meta,                                       // Vender prefixes

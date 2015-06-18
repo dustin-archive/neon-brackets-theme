@@ -1,9 +1,9 @@
 {
   "name": "dustindowell.neon",
   "title": "Neon",
-  "description": "Neon theme for Brackets. Themed Code Folding and CSS Color Preview.",
+  "description": "A cool, bright and sleek theme. Themed Code Folding and CSS Color Preview.",
   "homepage": "https://github.com/dustindowell22/neon-brackets-theme",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "author": "Dustin Dowell (https://github.com/dustindowell22)",
   "license": "MIT",
   "theme": {
